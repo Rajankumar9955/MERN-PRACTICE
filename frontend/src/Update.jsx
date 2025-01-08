@@ -17,7 +17,13 @@ const Update=()=>{
         loadData();
     },[])
 
-   
+    const DelData=(id)=>{
+        let api="http://localhost:8000/students/datadelete";
+        axios.post(api,{id:id}).then((res)=>{
+            alert("Data Deleted!!!")
+            loadData();
+        })
+    }
 
     
     const ans=data.map((key)=>{
