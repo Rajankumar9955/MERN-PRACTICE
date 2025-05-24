@@ -35,8 +35,6 @@ const Home=()=>{
            <button onClick={()=>{loadData2()}}>About</button>
            <button onClick={()=>{loadData3()}}>Service</button>
            <button onClick={()=>{loadData4()}}>Contact</button>
-
-
            </div>
         </>
     )
